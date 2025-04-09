@@ -54,6 +54,20 @@ Built with PHP, Laravel, and MySQL, it features real-time tracking, social login
 
 ---
 
+## 🛠️ Technologies Used
+
+| Technology     | Description                                |
+|----------------|--------------------------------------------|
+| PHP            | Backend scripting language for web logic   |
+| Laravel        | PHP framework for building web applications |
+| MySQL          | Relational database for data storage        |
+| HTML5 / CSS3   | Structuring and styling the user interface  |
+| JavaScript     | Client-side scripting for interactivity     |
+| Blade Templating | Laravel's dynamic HTML rendering engine    |
+| OAuth (Google & GitHub) | Secure social login integration    |
+
+---
+
 ## 🖼️ Project Screenshots
 
 ### 🌍 Website Pages
@@ -126,18 +140,5 @@ Built with PHP, Laravel, and MySQL, it features real-time tracking, social login
 
 #### 🎯 Manage Job Criteria  
 ![Manage Criteria](screenshots/admin-jobCriteria.png)
-
----
-
----
-
-## 🛠️ Technologies Used
-
-- **PHP**
-- **Laravel Framework**
-- **MySQL**
-- **HTML**, **CSS**, **JavaScript**
-- **Google & GitHub OAuth**
-- **RESTful Routing & MVC Architecture**
 
 ---
