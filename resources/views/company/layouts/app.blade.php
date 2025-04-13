@@ -9,6 +9,22 @@
     <link href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     @yield('customCss')
+    <script>
+        function checkScreen() {
+          // If screen width is less than 768px or device is mobile
+          if (/Mobi|Android|iPhone/i.test(navigator.userAgent) || window.innerWidth < 768) {
+            window.location.href = "/mobile-not-supported";
+          }
+        }
+      
+        // Check on page load
+        checkScreen();
+      
+        // Also check on window resize
+        window.addEventListener('resize', function () {
+          checkScreen();
+        });
+      </script>
 </head>
 <body>
 

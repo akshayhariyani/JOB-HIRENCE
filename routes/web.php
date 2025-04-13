@@ -22,6 +22,10 @@ use Illuminate\Support\Facades\Route;
 // Route to the homepage
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
+Route::get('/mobile-not-supported', function () {
+    return view('/mobile-not-supported');
+});
+
 // route to the jobs page
 Route::get('/jobs', [JobController::class, 'job'])->name('job');
 

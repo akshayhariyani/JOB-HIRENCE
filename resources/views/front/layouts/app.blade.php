@@ -8,6 +8,23 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     @yield('customCss')
+
+    <script>
+        function checkScreen() {
+          // If screen width is less than 768px or device is mobile
+          if (/Mobi|Android|iPhone/i.test(navigator.userAgent) || window.innerWidth < 768) {
+            window.location.href = "/mobile-not-supported";
+          }
+        }
+      
+        // Check on page load
+        checkScreen();
+      
+        // Also check on window resize
+        window.addEventListener('resize', function () {
+          checkScreen();
+        });
+      </script>
 </head>
 <body>
 
